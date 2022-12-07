@@ -20,14 +20,13 @@ elif user_choice == '**':
 else:
     print()
 end_number = int(input('Ввести целое число N:'))
-start_number = 1
-step = int(f'{(start_number + 1) ** 2}')
-for number in range(start_number, end_number, step):
-    print(number, end=' ')
+    print('range (N)')
+for i in range(N):
+    print(i ** 2, end=' ')
 print()
-number = int(input('Введите число для проверки:'))
-if number % 2 != 0:
-    print('Простое чсло')
+number = int(input('Введите любое число для проверки от 4 и >:'))
+if number % 2 != 0 and number % 3 != 0:
+    print('Простое число')
 else:
     print('Сложное число')
 K = int(input('Введите кол-во грибов K:'))
